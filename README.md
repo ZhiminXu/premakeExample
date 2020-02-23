@@ -27,10 +27,14 @@
 ## 4 下载所需文件
 - premake5.exe [下载](https://github.com/premake/premake-core/releases "premake5.exe下载链接")
 - glfw三方库 [下载](https://www.glfw.org/download.html "glfw下载路径")
+
 > 本文以64位系统为例，需下载64位二进制库，也可以下载32位，但要记得在后面lua脚本中改变architecture配置。
+
 > 将下载解压后的include和lib-vc*文件夹放在premakeExample/3rd/glfw文件夹下，"*"指代不同的vs版本，需与后续生成配置文件的vs版本一致。
+
 > 将lib-vc*路径下的glfw3.dll拷贝纸premakeExample/bin路径下
-- catch是一个只有头文件的依赖库，将Catch.hpp([下载](https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp catch.hpp下载路径))放在premakeExample/3rd/Catch/include路径下即可。
+
+- catch是一个只有头文件的依赖库，将Catch.hpp([下载](https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp "catch.hpp下载路径"))放在premakeExample/3rd/Catch/include路径下即可。
 
 ## 5 添加代码
 ### 5.1 ExampleDll
@@ -262,10 +266,10 @@ project "UnitTests"
 
 ## 7 生成工程文件并编译
 premake5.exe运行时时会寻找调用命令路径下的premake5.lua文件，如果想生成工程配置文件，需在premakeExample路径下调用`premake5.exe <action>`，其中`action`可指定为`vs2019`或`gmake`，本文以vs2019为例。
-![premake生成工程文件](https://github.com/ZhiminXu/premakeExample/blob/master/img/premake.jpg "premake生成工程文件")
+![premake生成工程文件](https://github.com/ZhiminXu/premakeExample/blob/master/img/premake.jpg?raw=true "premake生成工程文件")
 执行命令后在prj文件夹下，生成的工程配置文件如下：
-![工程配置文件](https://github.com/ZhiminXu/premakeExample/blob/master/img/prj.jpg "工程配置文件")
+![工程配置文件](https://github.com/ZhiminXu/premakeExample/blob/master/img/prj.jpg?raw=true "工程配置文件")
 打开premakeExample.sln编译解决方案，在bin路径下运行app.exe，效果如下：
-![app.exe](https://github.com/ZhiminXu/premakeExample/blob/master/img/helloworld.jpg "helloworld")
+![app.exe](https://github.com/ZhiminXu/premakeExample/blob/master/img/helloworld.jpg?raw=true "helloworld")
 命令行打开单元测试程序UnitTests.exe,效果如下：
-![UnitTests.exe](https://github.com/ZhiminXu/premakeExample/blob/master/img/UnitTests.jpg "单元测试通过")
+![UnitTests.exe](https://github.com/ZhiminXu/premakeExample/blob/master/img/UnitTests.jpg?raw=true "单元测试通过")
