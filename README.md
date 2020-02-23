@@ -267,9 +267,12 @@ project "UnitTests"
 ## 7 生成工程文件并编译
 premake5.exe运行时时会寻找调用命令路径下的premake5.lua文件，如果想生成工程配置文件，需在premakeExample路径下调用`premake5.exe <action>`，其中`action`可指定为`vs2019`或`gmake`，本文以vs2019为例。
 ![](./img/premake.JPG "premake生成工程文件")
+
 执行命令后在prj文件夹下，生成的工程配置文件如下：
 ![](./img/prj.JPG "工程配置文件")
+
 打开premakeExample.sln编译解决方案，在bin路径下运行app.exe，效果如下：
 ![](./img/helloworld.JPG "helloworld")
+
 命令行打开单元测试程序UnitTests.exe,效果如下：
 ![](./img/UnitTests.JPG "单元测试通过")
