@@ -1,5 +1,5 @@
-#ifndef EXAMPLE_LIB_HPP
-#define EXAMPLE_LIB_HPP 1
+#ifndef EXAMPLE_DLL_HPP
+#define EXAMPLE_DLL_HPP 1
 
 #include <string>
 #include <memory>
@@ -8,6 +8,7 @@ struct GLFWwindow;
 
 namespace ExDLL
 {	
+	//µº≥ˆWindow¿‡
 	class _declspec(dllexport) Window
 	{
 	public:

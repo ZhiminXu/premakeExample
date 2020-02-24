@@ -10,6 +10,7 @@ TEST_CASE("Window tests", "[ExampleDll]")
 
 	auto size = w.getWindowSize();
 
+	//测试创建窗口的宽高与指定宽高是否一致
 	REQUIRE(size.first == 600);
 	REQUIRE(size.second == 400);
 }
