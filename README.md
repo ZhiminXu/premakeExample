@@ -28,11 +28,9 @@
 - premake5.exe [下载](https://github.com/premake/premake-core/releases "premake5.exe下载链接")
 - glfw三方库 [下载](https://www.glfw.org/download.html "glfw下载路径")
 
-> 本文以64位系统为例，需下载64位二进制库，也可以下载32位，但要记得在后面lua脚本中改变architecture配置。
-
-> 将下载解压后的include和`lib-vc*`文件夹放在premakeExample/3rd/glfw文件夹下，`*`指代不同的vs版本，需与后续生成配置文件的vs版本一致。
-
-> 将lib-vc*路径下的glfw3.dll拷贝纸premakeExample/bin路径下
+> * 本文以64位系统为例，需下载64位二进制库，也可以下载32位，但要记得在后面lua脚本中改变architecture配置。
+> * 将下载解压后的include和`lib-vc*`文件夹放在premakeExample/3rd/glfw文件夹下，`*`指代不同的vs版本，需与后续生成配置文件的vs版本一致。
+> * 将lib-vc*路径下的glfw3.dll拷贝纸premakeExample/bin路径下
 
 - catch是一个只有头文件的依赖库，将Catch.hpp([下载](https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp "catch.hpp下载路径"))放在premakeExample/3rd/Catch/include路径下即可。
 
